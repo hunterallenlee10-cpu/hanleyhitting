@@ -5,8 +5,12 @@ Guidance for Claude Code when working in this repository.
 ## What this is
 
 Website template for **Hanley Hitting**, built from the G1 Baseball and
-Softball Training site (same layout, styles, and animations). No real
-Hanley Hitting content has been added yet.
+Softball Training site (same layout and animations), restyled with a light
+theme and orange accents. No real Hanley Hitting content has been added yet.
+
+Colors live in the `:root` tokens at the top of each page's `<style>`; the
+hero canvas animation has its own `ACCENT` / `ACCENT2` values in the script
+at the bottom of `index.html`.
 
 - `index.html` — homepage (hero, testimonials carousel, program, about,
   coach, how it works, what's included, guarantee, FAQ, apply, newsletter)

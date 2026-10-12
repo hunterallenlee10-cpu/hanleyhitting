@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Meet the Coach &middot; Hanley Hitting</title>
 <meta name="description" content="Meet the founder and hitting coach of Hanley Hitting. Template: replace with the real description.">
-<meta name="theme-color" content="#07080A">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%2307080A%22/%3E%3Ctext x=%2232%22 y=%2242%22 text-anchor=%22middle%22 font-family=%22Arial,sans-serif%22 font-weight=%22900%22 font-size=%2228%22 fill=%22%2333A1E7%22%3EHH%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#FAF7F2">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23EA580C%22/%3E%3Ctext x=%2232%22 y=%2242%22 text-anchor=%22middle%22 font-family=%22Arial,sans-serif%22 font-weight=%22900%22 font-size=%2228%22 fill=%22%23FFFFFF%22%3EHH%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -20,20 +20,20 @@
    ============================================================ */
 
 :root{
-  --bg:#07080A;
-  --panel:#0C0E12;
-  --card:#111419;
-  --card-hi:#151A21;
-  --line:rgba(255,255,255,.07);
-  --line-2:rgba(255,255,255,.16);
-  --text:#F4F6F8;
-  --muted:#A4ADB8;
-  --dim:#77808A;
-  --accent:#33A1E7;
-  --accent-2:#7CC4F0;
-  --accent-fill:#1478B8;
-  --accent-deep:#0F5D93;
-  --accent-soft:rgba(51,161,231,.12);
+  --bg:#FAF7F2;
+  --panel:#F3EEE6;
+  --card:#FFFFFF;
+  --card-hi:#FBF6EF;
+  --line:rgba(28,25,23,.09);
+  --line-2:rgba(28,25,23,.18);
+  --text:#1C1917;
+  --muted:#57534E;
+  --dim:#8A8178;
+  --accent:#EA580C;
+  --accent-2:#C2410C;
+  --accent-fill:#F97316;
+  --accent-deep:#9A3412;
+  --accent-soft:rgba(234,88,12,.10);
 
   --display:'Archivo',system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
   --body:'Inter',system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
@@ -60,7 +60,7 @@ a{color:inherit}
 ul{margin:0;padding:0;list-style:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 section{scroll-margin-top:calc(var(--hdr) + 12px)}
-.logo{display:inline-block;aspect-ratio:1/1;background:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Ccircle cx=%22100%22 cy=%22100%22 r=%2294%22 fill=%22%230C0E12%22 stroke=%22%2333A1E7%22 stroke-width=%225%22 stroke-dasharray=%2214 9%22/%3E%3Ctext x=%22100%22 y=%22114%22 text-anchor=%22middle%22 font-family=%22Archivo,Arial,sans-serif%22 font-weight=%22900%22 font-size=%2264%22 fill=%22%23F4F6F8%22 letter-spacing=%222%22%3EHH%3C/text%3E%3Ctext x=%22100%22 y=%22146%22 text-anchor=%22middle%22 font-family=%22Arial,sans-serif%22 font-weight=%22700%22 font-size=%2215%22 fill=%22%2377808A%22 letter-spacing=%225%22%3ELOGO%3C/text%3E%3C/svg%3E") center/contain no-repeat}
+.logo{display:inline-block;aspect-ratio:1/1;background:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Ccircle cx=%22100%22 cy=%22100%22 r=%2294%22 fill=%22%23FFFFFF%22 stroke=%22%23EA580C%22 stroke-width=%225%22 stroke-dasharray=%2214 9%22/%3E%3Ctext x=%22100%22 y=%22114%22 text-anchor=%22middle%22 font-family=%22Archivo,Arial,sans-serif%22 font-weight=%22900%22 font-size=%2264%22 fill=%22%231C1917%22 letter-spacing=%222%22%3EHH%3C/text%3E%3Ctext x=%22100%22 y=%22146%22 text-anchor=%22middle%22 font-family=%22Arial,sans-serif%22 font-weight=%22700%22 font-size=%2215%22 fill=%22%238A8178%22 letter-spacing=%225%22%3ELOGO%3C/text%3E%3C/svg%3E") center/contain no-repeat}
 
 .vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(18px,4vw,40px)}
@@ -73,7 +73,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   border-radius:3px;
 }
 
-.skip{position:absolute;left:-9999px;top:0;z-index:300;background:var(--accent);color:#04121D;font-weight:700;font-size:.85rem;padding:.7rem 1.1rem;border-radius:0 0 8px 0}
+.skip{position:absolute;left:-9999px;top:0;z-index:300;background:var(--accent);color:#fff;font-weight:700;font-size:.85rem;padding:.7rem 1.1rem;border-radius:0 0 8px 0}
 .skip:focus{left:0;top:0}
 
 /* ---------- shared type ---------- */
@@ -96,7 +96,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 /* Visible placeholder chips — unconfirmed content, never invented */
 .ph{
   display:inline-block;
-  border:1px dashed rgba(255,255,255,.3);
+  border:1px dashed rgba(28,25,23,.28);
   border-radius:6px;
   padding:.05em .5em;
   color:var(--dim);
@@ -117,15 +117,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 }
 .btn svg{flex:none}
 .btn-primary{
-  background:linear-gradient(180deg,#1E8ED2,#116DA9);
+  background:linear-gradient(180deg,#F97316,#EA580C);
   color:#fff;
-  box-shadow:0 8px 24px -10px rgba(51,161,231,.45);
+  box-shadow:0 8px 24px -10px rgba(234,88,12,.45);
 }
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(51,161,231,.55)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(234,88,12,.55)}
 .btn-ghost{
   border-color:var(--line-2);
   color:var(--text);
-  background:rgba(255,255,255,.02);
+  background:rgba(255,255,255,.6);
 }
 .btn-ghost:hover{transform:translateY(-2px);border-color:var(--accent)}
 .btn-lg{padding:1rem 1.9rem;font-size:1rem}
@@ -146,7 +146,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .hdr{
   position:sticky;top:0;z-index:100;
   height:var(--hdr);
-  background:rgba(7,8,10,.82);
+  background:rgba(250,247,242,.86);
   backdrop-filter:blur(14px);
   -webkit-backdrop-filter:blur(14px);
   border-bottom:1px solid var(--line);
@@ -176,7 +176,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .burger{display:block}
   .m-nav{
     display:none;position:absolute;top:var(--hdr);left:0;right:0;
-    background:rgba(9,10,13,.97);border-bottom:1px solid var(--line);
+    background:rgba(250,247,242,.97);border-bottom:1px solid var(--line);
     padding:1rem clamp(18px,4vw,40px) 1.4rem;
   }
   .m-nav.open{display:block}
@@ -190,12 +190,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 /* ---------- hero ---------- */
 .hero{position:relative;overflow:hidden;padding-block:clamp(64px,9vw,120px)}
 .hero-bg{position:absolute;inset:0;pointer-events:none;overflow:hidden}
-.hero-bg .glow{position:absolute;left:-200px;bottom:-260px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(51,161,231,.14),transparent 65%)}
+.hero-bg .glow{position:absolute;left:-200px;bottom:-260px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(234,88,12,.14),transparent 65%)}
 /* "Line Drive" animated background */
 .hbg-flight .hbg-flight-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
 .hbg-flight .hbg-flight-glow{
   position:absolute;right:-12%;top:6%;width:56%;height:72%;
-  background:radial-gradient(closest-side,rgba(51,161,231,.14),rgba(51,161,231,0) 72%);
+  background:radial-gradient(closest-side,rgba(234,88,12,.14),rgba(234,88,12,0) 72%);
   filter:blur(12px);opacity:.7;
   animation:hbg-flight-glowPulse 14s ease-in-out infinite alternate;
   will-change:opacity,transform;
@@ -220,7 +220,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .hero .lede{margin-top:1.3rem;font-size:1.1rem;color:var(--muted);max-width:54ch}
 .cta-row{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
 .hero-side{display:flex;flex-direction:column;align-items:center;gap:1.6rem}
-.hero-side .mark{width:min(220px,52vw);filter:drop-shadow(0 18px 40px rgba(0,0,0,.55))}
+.hero-side .mark{width:min(220px,52vw);filter:drop-shadow(0 14px 30px rgba(154,52,18,.18))}
 .mini-card{
   width:100%;
   background:var(--card);border:1px solid var(--line);border-radius:14px;
@@ -250,7 +250,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   padding:1.7rem 1.6rem;
   transition:transform .2s ease,border-color .2s ease;
 }
-.card:hover{transform:translateY(-4px);border-color:rgba(51,161,231,.4)}
+.card:hover{transform:translateY(-4px);border-color:rgba(234,88,12,.4)}
 .card .tick{width:34px;height:4px;border-radius:2px;background:var(--accent);margin-bottom:1.1rem}
 .card h3{font-size:1.12rem;font-weight:700;letter-spacing:-.01em}
 .card p{margin-top:.65rem;font-size:.93rem;color:var(--muted)}
@@ -264,11 +264,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   padding:1.9rem 1.8rem;display:flex;flex-direction:column;
 }
 .cmp-card.old{opacity:.82}
-.cmp-card.old h3{color:var(--muted);text-decoration:line-through;text-decoration-color:rgba(255,255,255,.35);text-decoration-thickness:2px}
+.cmp-card.old h3{color:var(--muted);text-decoration:line-through;text-decoration-color:rgba(28,25,23,.3);text-decoration-thickness:2px}
 .cmp-card.new{
-  border-color:rgba(51,161,231,.5);
-  background:linear-gradient(180deg,rgba(51,161,231,.07),transparent 45%),var(--card);
-  box-shadow:0 18px 44px -24px rgba(51,161,231,.35);
+  border-color:rgba(234,88,12,.5);
+  background:linear-gradient(180deg,rgba(234,88,12,.07),transparent 45%),var(--card);
+  box-shadow:0 18px 44px -24px rgba(234,88,12,.35);
 }
 .cmp-card h3{font-size:1.35rem;font-weight:800}
 .cmp-tag{
@@ -277,7 +277,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   border:1px solid var(--line-2);border-radius:999px;color:var(--dim);
   padding:.32rem .85rem;margin-bottom:1.1rem;
 }
-.cmp-tag.hot{border-color:rgba(51,161,231,.55);color:var(--accent);background:var(--accent-soft)}
+.cmp-tag.hot{border-color:rgba(234,88,12,.55);color:var(--accent);background:var(--accent-soft)}
 .cmp-sub{margin-top:.55rem;font-size:.93rem;color:var(--muted)}
 .cmp-card .checks{margin-top:1.3rem}
 .cmp-card .ck.x{color:var(--dim)}
@@ -288,10 +288,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .guar-card{
   position:relative;overflow:hidden;
   max-width:880px;margin:2.6rem auto 0;text-align:center;
-  background:linear-gradient(180deg,rgba(51,161,231,.09),transparent 60%),var(--card);
-  border:1px solid rgba(51,161,231,.45);border-radius:20px;
+  background:linear-gradient(180deg,rgba(234,88,12,.09),transparent 60%),var(--card);
+  border:1px solid rgba(234,88,12,.45);border-radius:20px;
   padding:clamp(2rem,5vw,3.2rem);
-  box-shadow:0 24px 60px -30px rgba(51,161,231,.4);
+  box-shadow:0 24px 60px -30px rgba(234,88,12,.4);
 }
 .guar-card .shield{
   width:58px;height:58px;border-radius:16px;margin:0 auto 1.3rem;
@@ -334,7 +334,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 }
 .coach-art{
   position:relative;min-height:340px;
-  background:linear-gradient(160deg,#10141A,#0A0C10);
+  background:linear-gradient(160deg,#F3EEE6,#EDE5D9);
   border-right:1px solid var(--line);
   overflow:hidden;
 }
@@ -358,7 +358,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 /* ---------- how it works ---------- */
 .step-num{
   width:40px;height:40px;border-radius:50%;
-  background:var(--accent-soft);border:1px solid rgba(51,161,231,.4);
+  background:var(--accent-soft);border:1px solid rgba(234,88,12,.4);
   display:flex;align-items:center;justify-content:center;
   font-family:var(--display);font-weight:800;color:var(--accent);
   margin-bottom:1.1rem;font-size:1.02rem;
@@ -371,7 +371,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   padding:1.7rem 1.6rem;
   transition:transform .2s ease,border-color .2s ease;
 }
-.svc:hover{transform:translateY(-4px);border-color:rgba(51,161,231,.4)}
+.svc:hover{transform:translateY(-4px);border-color:rgba(234,88,12,.4)}
 .svc .icn{width:44px;height:44px;border-radius:12px;background:var(--accent-soft);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem}
 .svc .icn svg{width:22px;height:22px}
 .svc h3{font-size:1.12rem;font-weight:700}
@@ -405,7 +405,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   display:flex;flex-direction:column;
   transition:border-color .2s ease;
 }
-.t-card:hover{border-color:rgba(51,161,231,.4)}
+.t-card:hover{border-color:rgba(234,88,12,.4)}
 .t-photo{position:relative;aspect-ratio:4/3;background:var(--card-hi)}
 .t-photo img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
 .t-photo::after{
@@ -416,9 +416,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 /* placeholder photo block — swap for a real <img> per card when supplied */
 .t-photo.pend{
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.7rem;
-  background:radial-gradient(120% 90% at 50% 0%,rgba(51,161,231,.15),transparent 62%),var(--card-hi);
+  background:radial-gradient(120% 90% at 50% 0%,rgba(234,88,12,.15),transparent 62%),var(--card-hi);
 }
-.t-photo.pend .ini{font-family:var(--display);font-weight:900;font-size:2.7rem;letter-spacing:.04em;color:rgba(255,255,255,.14)}
+.t-photo.pend .ini{font-family:var(--display);font-weight:900;font-size:2.7rem;letter-spacing:.04em;color:rgba(28,25,23,.1)}
 .t-body{display:flex;flex-direction:column;flex:1;padding:1.35rem 1.5rem 1.6rem}
 .t-card .qmark{width:26px;height:26px;color:var(--accent);margin-bottom:.9rem;transform:rotate(180deg)}
 .t-card blockquote{margin:0;font-size:.93rem;line-height:1.65;color:var(--muted);flex:1}
@@ -430,7 +430,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .car-ui{display:flex;align-items:center;justify-content:center;gap:.9rem;margin-top:1.6rem}
 .car-btn{
   width:46px;height:46px;border-radius:50%;
-  border:1px solid rgba(51,161,231,.55);color:var(--accent);
+  border:1px solid rgba(234,88,12,.55);color:var(--accent);
   display:flex;align-items:center;justify-content:center;
   transition:border-color .15s ease,background .15s ease,color .15s ease;
 }
@@ -485,7 +485,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .news-form input::placeholder{color:var(--dim)}
 .news-form button{
   flex:none;display:inline-flex;align-items:center;gap:.5rem;
-  background:#fff;color:#0A0C10;font-weight:700;font-size:.95rem;
+  background:var(--text);color:#fff;font-weight:700;font-size:.95rem;
   padding:.95rem 1.5rem;transition:background .15s ease;
 }
 .news-form button:hover{background:var(--accent-2)}
@@ -538,7 +538,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   padding:1.6rem 1.5rem;
   transition:transform .2s ease,border-color .2s ease;
 }
-.pt-card:hover{transform:translateY(-4px);border-color:rgba(51,161,231,.4)}
+.pt-card:hover{transform:translateY(-4px);border-color:rgba(234,88,12,.4)}
 .pt-logo{
   height:150px;border-radius:10px;
   background:var(--card-hi);border:1px solid var(--line);
@@ -558,7 +558,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   font-size:.95rem;font-weight:700;letter-spacing:.08em;
   color:var(--accent-2);background:var(--accent-soft);
-  border:1px dashed rgba(51,161,231,.45);border-radius:8px;
+  border:1px dashed rgba(234,88,12,.45);border-radius:8px;
   padding:.3rem .7rem;
 }
 .pt-link{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;margin-top:auto;padding-top:1.2rem;font-size:.9rem;color:var(--muted)}
@@ -584,12 +584,17 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .bio-side{position:static;max-width:340px}
 }
 
+/* light theme: small accent text uses the deeper orange for contrast */
+.eyebrow,.coach-role,.cmp-tag.hot,.svc .go,.faq[open] summary,.guar-line{color:var(--accent-2)}
+.card,.svc,.t-card,.cmp-card,.pt-card,.apply-card,.coach-card,.faq-list,.bio-facts{box-shadow:0 1px 2px rgba(28,25,23,.04),0 8px 24px -16px rgba(28,25,23,.18)}
+::selection{background:rgba(234,88,12,.2)}
+
 /* Placeholder image block — swap for a real <img> (same class) when supplied */
 .ph-img{
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;
   width:100%;height:100%;padding:1rem;text-align:center;
-  border:1px dashed rgba(255,255,255,.22);
-  background:radial-gradient(120% 90% at 50% 0%,rgba(51,161,231,.13),transparent 62%),var(--card-hi);
+  border:1px dashed rgba(28,25,23,.22);
+  background:radial-gradient(120% 90% at 50% 0%,rgba(234,88,12,.13),transparent 62%),var(--card-hi);
   color:var(--dim);
   font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.8rem;letter-spacing:.03em;
 }
