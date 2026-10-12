@@ -4,41 +4,37 @@ Guidance for Claude Code when working in this repository.
 
 ## What this is
 
-Website template for **Hanley Hitting**, built from the G1 Baseball and
-Softball Training site (same layout and animations), restyled with a light
-theme and orange accents. Built for BJ Hanley.
+The website for **Hanley Hitting LLC**: BJ Hanley's hitting lessons and indoor
+training facility ("the Lab") in Fredericksburg, Virginia, plus the Cardinals
+travel baseball teams (13U, 15U, 17U).
 
-Facts about BJ used on the site (all from an older public Pinnacle Baseball
-coach profile; confirm with him before launch): grew up in Northern
-California; played on scholarship at Southern Virginia University and holds
-its career records for home runs, RBI and batting average; coached the 2014
-SCLL District All-Stars to the District 15 championship; teaches hitting to
-all ages in Spotsylvania, Virginia. Do not use the AI-generated tryout photo
-from his Facebook. Everything else is still a placeholder.
+- `index.html` is the whole site: one static page, all CSS and JS inline.
+  Sections: hero, quick facts, Lessons, The Lab (+ build-out strip),
+  Cardinals Baseball (17U tryouts, Summer 2027 schedule, results), About BJ,
+  Reels, Contact.
+- `img/` holds responsive WebP photos (640 / 1280, hero up to 1920; never
+  upscaled, EXIF stripped) plus the favicon and touch icon. Only files the
+  page uses are committed.
 
-Colors live in the `:root` tokens at the top of each page's `<style>`; the
-hero canvas animation has its own `ACCENT` / `ACCENT2` values in the script
-at the bottom of `index.html`.
+## Facts and content rules
 
-- `index.html` — homepage (hero, testimonials carousel, program, about,
-  coach, how it works, what's included, guarantee, FAQ, apply, newsletter)
-- `bio.html` — full coach bio
-- `partners.html` — official partners and discount codes
+- The only facts allowed on the site are the ones BJ published on his Facebook
+  (facebook.com/bj.hanley.1), collected in `site-info.md` (kept outside the
+  repo, in the "Hanley Hitting - Website Photos" Drive folder). Do not invent
+  testimonials, stats, ratings, prices or player names.
+- Anything that still needs BJ's OK is an HTML `TODO CONFIRM` comment in
+  `index.html`, never a visible claim. Search for `TODO` to find them all.
+- Lessons are booked by Facebook message; there is no phone, email or address
+  on the site until BJ confirms one.
+- Many photos show minors: prefer facility and wide team shots, write alt text
+  without names, and keep the parents'-permission TODO until BJ confirms.
 
-Each page is a single static file with all CSS and JS inline.
+## Brand
 
-## Filling in content
-
-- Dashed chips (`<span class="ph">…</span>`) mark text that still needs
-  real content. Replace the whole span with the real text.
-- Dashed image blocks (`<div class="ph-img …">`) mark photos. Swap each for
-  an `<img>` with the same classes (e.g. `about-photo`, `coach-photo`,
-  `bio-photo`). Testimonial photos use `<div class="t-photo pend">`;
-  see the comment above the testimonials section.
-- The logo is a placeholder "HH" SVG in the `.logo` CSS rule on each page;
-  the favicon is in the `<link rel="icon">` tag.
-- Contact placeholders: `tel:000-000-0000` and `you@example.com` appear on
-  every page. The application form button (`#apply`) has `href="#"`.
-- Newsletter: set `NEWSLETTER_WEBHOOK` and `NEWSLETTER_EMAIL` in the script
-  at the bottom of `index.html`. With no webhook it falls back to a mailto.
-- Social links in the footer are `href="#"` on every page.
+- Primary: navy `#282165` and silver `#BCBDBF`, sampled from the HH logo.
+  Colors live in the `:root` tokens at the top of the `<style>` block.
+- The Cardinals section uses its own red/black/white sub-brand.
+- The HH logo file is only 472px: never show it larger. BJ should send the
+  original vector.
+- The hero canvas animation's colors are `ACCENT` / `ACCENT2` in the script
+  at the bottom of `index.html`.
