@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hanley Hitting &mdash; Hitting Development (Template)</title>
-<meta name="description" content="Hanley Hitting — hitting development. Template: replace with the real description.">
+<title>Hanley Hitting &mdash; Hitting Lessons with BJ Hanley in Spotsylvania, VA</title>
+<meta name="description" content="Private hitting instruction for every age with BJ Hanley, Southern Virginia University career record holder for home runs, RBI and batting average. Based in Spotsylvania, Virginia.">
 <meta name="theme-color" content="#FAF7F2">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23EA580C%22/%3E%3Ctext x=%2232%22 y=%2242%22 text-anchor=%22middle%22 font-family=%22Arial,sans-serif%22 font-weight=%22900%22 font-size=%2228%22 fill=%22%23FFFFFF%22%3EHH%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -669,6 +669,19 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .card,.svc,.t-card,.cmp-card,.pt-card,.apply-card,.coach-card,.faq-list,.bio-facts{box-shadow:0 1px 2px rgba(28,25,23,.04),0 8px 24px -16px rgba(28,25,23,.18)}
 ::selection{background:rgba(234,88,12,.2)}
 
+/* ---------- credentials strip (under the hero) ---------- */
+.creds{border-block:1px solid var(--line);background:var(--card)}
+.creds-in{display:grid;grid-template-columns:repeat(3,1fr)}
+.cred{padding:1.6rem clamp(1rem,2.5vw,2rem);display:flex;gap:1rem;align-items:center}
+.cred + .cred{border-left:1px solid var(--line)}
+.cred .big{flex:none;font-family:var(--display);font-weight:900;font-size:clamp(1.7rem,1.2rem + 1.4vw,2.3rem);line-height:1;color:var(--accent);letter-spacing:-.02em}
+.cred .what{font-size:.9rem;line-height:1.45;color:var(--muted)}
+.cred .what strong{display:block;color:var(--text);font-weight:700;font-size:.95rem}
+@media (max-width:820px){
+  .creds-in{grid-template-columns:1fr}
+  .cred + .cred{border-left:0;border-top:1px solid var(--line)}
+}
+
 /* Placeholder image block — swap for a real <img> (same class) when supplied */
 .ph-img{
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;
@@ -754,9 +767,9 @@ h1 .ph,h2 .ph,h3 .ph{font-family:inherit;font-size:inherit;letter-spacing:inheri
   </div>
   <div class="wrap hero-grid">
     <div>
-      <span class="pill"><span class="ph">Announcement / badge</span></span>
-      <h1><span class="ph">Main headline</span> <span class="hl"><span class="ph">Highlighted phrase</span></span></h1>
-      <p class="lede"><span class="ph">One or two sentences on who Hanley Hitting helps and how.</span></p>
+      <span class="pill">Spotsylvania, VA &middot; All ages</span>
+      <h1>Hitting Lessons With <span class="hl">BJ Hanley</span></h1>
+      <p class="lede">One-on-one hitting instruction for players of every age, from a coach who left Southern Virginia University holding its career records for home runs, RBI and batting average.</p>
       <div class="cta-row">
         <a class="btn btn-primary btn-lg" href="#apply">Apply for a Spot
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -770,6 +783,24 @@ h1 .ph,h2 .ph,h3 .ph{font-family:inherit;font-size:inherit;letter-spacing:inheri
     <div class="hero-side">
       <span class="logo mark" role="img" aria-label="Hanley Hitting logo"></span>
       <p class="hero-contact">Questions? <a href="tel:000-000-0000">Call or text us</a> or email <a href="mailto:you@example.com"><span class="ph">Email address</span></a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= credentials strip ================= -->
+<section class="creds" aria-label="BJ Hanley at a glance">
+  <div class="wrap creds-in">
+    <div class="cred">
+      <span class="big">3</span>
+      <p class="what"><strong>Career school records</strong>Home runs, RBI and batting average at Southern Virginia University</p>
+    </div>
+    <div class="cred">
+      <span class="big">2014</span>
+      <p class="what"><strong>District 15 Champions</strong>Coached the SCLL District All-Stars to the championship</p>
+    </div>
+    <div class="cred">
+      <span class="big">All</span>
+      <p class="what"><strong>Ages &amp; skill levels</strong>Private hitting instruction in Spotsylvania, Virginia</p>
     </div>
   </div>
 </section>
@@ -996,32 +1027,32 @@ h1 .ph,h2 .ph,h3 .ph{font-family:inherit;font-size:inherit;letter-spacing:inheri
     </div>
     <div class="coach-card">
       <div class="coach-art">
-        <div class="ph-img coach-photo" role="img" aria-label="Coach photo placeholder"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="6" width="19" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 6l1.5-2.5h5L16 6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.8" stroke="currentColor" stroke-width="1.6"/></svg><span>Coach photo</span></div>
+        <div class="ph-img coach-photo" role="img" aria-label="BJ Hanley photo placeholder"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="6" width="19" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 6l1.5-2.5h5L16 6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.8" stroke="currentColor" stroke-width="1.6"/></svg><span>Photo of BJ</span></div>
       </div>
       <div class="coach-body">
-        <h3><span class="ph">Coach name</span></h3>
-        <p class="coach-role">Founder &middot; Hitting Coach</p>
-        <p class="bio"><span class="ph">Short coach bio: experience, background, who they've worked with.</span></p>
+        <h3>BJ Hanley</h3>
+        <p class="coach-role">Founder &middot; Hitting Instructor</p>
+        <p class="bio">BJ grew up in Northern California and earned a baseball scholarship to Southern Virginia University, where he finished his career as the school&rsquo;s record holder in home runs, RBI and batting average. Now based in Spotsylvania, he coaches hitters of every age.</p>
         <ul class="checks">
           <li>
             <svg class="ck" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2.5 9.5 7 14 15.5 4.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span><strong><span class="ph">Highlight</span></strong> &mdash; <span class="ph">detail</span></span>
+            <span><strong>Southern Virginia University</strong> &mdash; played college baseball on scholarship</span>
           </li>
           <li>
             <svg class="ck" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2.5 9.5 7 14 15.5 4.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span><strong><span class="ph">Highlight</span></strong> &mdash; <span class="ph">detail</span></span>
+            <span><strong>SVU career record holder</strong> &mdash; home runs, RBI and batting average</span>
           </li>
           <li>
             <svg class="ck" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2.5 9.5 7 14 15.5 4.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span><strong><span class="ph">Highlight</span></strong> &mdash; <span class="ph">detail</span></span>
+            <span><strong>2014 District 15 Champions</strong> &mdash; coached the SCLL District All-Star team to the title</span>
           </li>
           <li>
             <svg class="ck" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2.5 9.5 7 14 15.5 4.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span><strong><span class="ph">Highlight</span></strong> &mdash; <span class="ph">detail</span></span>
+            <span><strong>Hitting lessons for every age</strong> &mdash; based in Spotsylvania, Virginia</span>
           </li>
         </ul>
         <div class="cta-row" style="margin-top:1.6rem">
-          <a class="btn btn-primary" href="bio.html">Read the Full Bio
+          <a class="btn btn-primary" href="bio.html">Read BJ&rsquo;s Full Bio
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -1246,7 +1277,7 @@ h1 .ph,h2 .ph,h3 .ph{font-family:inherit;font-size:inherit;letter-spacing:inheri
         </div>
       </div>
       <div class="apply-card">
-        <h3><span class="ph">Program name</span></h3>
+        <h3>Train With BJ Hanley</h3>
         <p><span class="ph">Membership type</span> &middot; <span class="ph">Guarantee summary</span></p>
         <ul class="apply-steps">
           <li>
@@ -1364,7 +1395,7 @@ h1 .ph,h2 .ph,h3 .ph{font-family:inherit;font-size:inherit;letter-spacing:inheri
     <span class="icn" aria-hidden="true">
       <svg viewBox="0 0 22 22" fill="none"><path d="m2 11 18-8-5 16-4.5-5.5L2 11Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10.5 13.5 20 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
     </span>
-    <h2>Get the latest from Hanley Hitting sent straight to your inbox!</h2>
+    <h2>Hitting tips and news from BJ, straight to your inbox.</h2>
     <form class="news-form" id="newsForm">
       <label class="vh" for="nEmail">Email</label>
       <input id="nEmail" type="email" placeholder="Email" required>
@@ -1384,7 +1415,7 @@ h1 .ph,h2 .ph,h3 .ph{font-family:inherit;font-size:inherit;letter-spacing:inheri
   <div class="wrap ftr-grid">
     <div>
       <span class="logo mark" role="img" aria-label="Hanley Hitting logo"></span>
-      <p class="tag">Hanley Hitting &mdash; <span class="ph">One-line description of the business</span></p>
+      <p class="tag">Hanley Hitting &mdash; Hitting instruction with BJ Hanley in Spotsylvania, Virginia. Every age, every level.</p>
     </div>
     <div>
       <h4>Quick links</h4>
@@ -1415,7 +1446,7 @@ h1 .ph,h2 .ph,h3 .ph{font-family:inherit;font-size:inherit;letter-spacing:inheri
   </div>
   <div class="wrap ftr-bar">
     <span>&copy; <span id="year">2026</span> Hanley Hitting</span>
-    <span><span class="ph">Footer tagline</span></span>
+    <span>Hitting instruction &middot; Spotsylvania, VA</span>
   </div>
 </footer>
 

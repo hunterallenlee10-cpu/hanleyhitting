@@ -6,7 +6,15 @@ Guidance for Claude Code when working in this repository.
 
 Website template for **Hanley Hitting**, built from the G1 Baseball and
 Softball Training site (same layout and animations), restyled with a light
-theme and orange accents. No real Hanley Hitting content has been added yet.
+theme and orange accents. Built for BJ Hanley.
+
+Facts about BJ used on the site (all from an older public Pinnacle Baseball
+coach profile; confirm with him before launch): grew up in Northern
+California; played on scholarship at Southern Virginia University and holds
+its career records for home runs, RBI and batting average; coached the 2014
+SCLL District All-Stars to the District 15 championship; teaches hitting to
+all ages in Spotsylvania, Virginia. Do not use the AI-generated tryout photo
+from his Facebook. Everything else is still a placeholder.
 
 Colors live in the `:root` tokens at the top of each page's `<style>`; the
 hero canvas animation has its own `ACCENT` / `ACCENT2` values in the script
